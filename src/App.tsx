@@ -1,11 +1,14 @@
+import { Navbar } from '@/layout/Navbar.tsx';
 
 function App() {
-
   return (
     <>
-      <h1>CV Portfolio</h1>
+      <div className='min-h-screen overflow-x-hidden'>
+        <Navbar />
+        <main></main>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
