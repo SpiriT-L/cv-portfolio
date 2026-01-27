@@ -1,5 +1,5 @@
 interface LayoutProps {
-  children: string;
+  children: React.ReactNode;
   className?: string;
   size?: 'sm' | 'default' | 'lg';
 }

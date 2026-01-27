@@ -1,3 +1,5 @@
+import { Button } from '@/components/Button';
+import { ArrowRight } from 'lucide-react';
 import { useMemo } from 'react';
 
 const generateDots = () => {
@@ -50,17 +52,33 @@ const Hero = () => {
               </span>
             </div>
             {/* headline */}
-            <div>
-              <h1>
+            <div className='space-y-4'>
+              <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100'>
                 Creating <span className='text-primary glow-text'>modern</span>
                 <br />
                 interfaces with
                 <br />
-                <span className='font-serif italic font-normal text-white'>React.</span>
+                <span className='font-serif italic font-normal text-white'>
+                  React.
+                </span>
               </h1>
-              <p className='text-lg text-muted-foreground max-w-lg'>
-                Hi, I’m Leonid Matscevich. I am a React developer who builds modern, fast, and intuitive interfaces with attention to every detail. My work combines clean code, thoughtful architecture, and visual aesthetics to turn ideas into functional and user‑friendly web applications. I strive to ensure that every project is not only technically solid but also delivers a smooth and enjoyable experience for the user.
+              <p className='text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200'>
+                Hi, I’m Leonid Matscevich. I am a React developer who builds
+                modern, fast, and intuitive interfaces with attention to every
+                detail. My work combines clean code, thoughtful architecture,
+                and visual aesthetics to turn ideas into functional and
+                user‑friendly web applications. I strive to ensure that every
+                project is not only technically solid but also delivers a smooth
+                and enjoyable experience for the user.
               </p>
+            </div>
+            <div>
+              <div>
+                <Button size='lg'>
+                  Contact Me
+                  <ArrowRight className='w-5 h-5' />
+                </Button>
+              </div>
             </div>
           </div>
           {/* right column content */}

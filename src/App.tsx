@@ -1,5 +1,5 @@
 import { Navbar } from '@/layout/Navbar.tsx';
-import Hero from './section/Hero'
+import Hero from '@/section/Hero'
 
 function App() {
   return (
