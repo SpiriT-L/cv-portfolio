@@ -1,3 +1,4 @@
+import { AnimationButton } from '@/components/AnimationButton';
 import { Button } from '@/components/Button';
 import { ArrowRight } from 'lucide-react';
 import { useMemo } from 'react';
@@ -72,13 +73,12 @@ const Hero = () => {
                 and enjoyable experience for the user.
               </p>
             </div>
-            <div>
-              <div>
-                <Button size='lg'>
-                  Contact Me
-                  <ArrowRight className='w-5 h-5' />
-                </Button>
-              </div>
+            <div className='flex flex-wrap gap-4 animate-fade-in animation-delay-300'>
+              <Button size='lg'>
+                Contact Me
+                <ArrowRight className='w-5 h-5' />
+              </Button>
+              <AnimationButton />
             </div>
           </div>
           {/* right column content */}
