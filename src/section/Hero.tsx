@@ -1,5 +1,6 @@
 import { AnimationButton } from '@/components/AnimationButton';
 import { Button } from '@/components/Button';
+import { FollowMe } from '@/components/FollowMe';
 import { ArrowRight } from 'lucide-react';
 import { useMemo } from 'react';
 
@@ -80,6 +81,7 @@ const Hero = () => {
               </Button>
               <AnimationButton />
             </div>
+            <FollowMe />
           </div>
           {/* right column content */}
         </div>
