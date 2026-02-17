@@ -1,6 +1,7 @@
 import { AnimationButton } from '@/components/AnimationButton';
 import { Button } from '@/components/Button';
 import { FollowMe } from '@/components/FollowMe';
+import { ProfileImage } from '@/components/ProfileImage';
 import { ArrowRight } from 'lucide-react';
 import { useMemo } from 'react';
 
@@ -65,7 +66,7 @@ const Hero = () => {
                 </span>
               </h1>
               <p className='text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200'>
-                Hi, I’m Leonid Matscevich. I am a React developer who builds
+                Hi, I’m Leonid Matskevich. I am a React developer who builds
                 modern, fast, and intuitive interfaces with attention to every
                 detail. My work combines clean code, thoughtful architecture,
                 and visual aesthetics to turn ideas into functional and
@@ -83,7 +84,7 @@ const Hero = () => {
             </div>
             <FollowMe />
           </div>
-          {/* right column content */}
+          <ProfileImage />
         </div>
       </div>
     </section>
