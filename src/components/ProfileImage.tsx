@@ -1,4 +1,5 @@
 import { FloatingBadge } from './FloatingBadge';
+import { StatusBadge } from './StatusBadge';
 
 export const ProfileImage = () => {
   return (
@@ -13,7 +14,7 @@ export const ProfileImage = () => {
               className='w-full aspect-4/5 object-cover rounded-2xl'
             />
             <FloatingBadge />
-            {/* Status Badge */}
+            <StatusBadge />
           </div>
         </div>
       </div>
