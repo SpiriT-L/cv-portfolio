@@ -1,3 +1,5 @@
+import { FloatingBadge } from './FloatingBadge';
+
 export const ProfileImage = () => {
   return (
     <>
@@ -10,6 +12,8 @@ export const ProfileImage = () => {
               alt='Profile image'
               className='w-full aspect-4/5 object-cover rounded-2xl'
             />
+            <FloatingBadge />
+            {/* Status Badge */}
           </div>
         </div>
       </div>
