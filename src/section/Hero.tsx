@@ -67,12 +67,10 @@ const Hero = () => {
               </h1>
               <p className='text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200'>
                 Hi, I’m Leonid Matskevich. I am a React developer who builds
-                modern, fast, and intuitive interfaces with attention to every
-                detail. My work combines clean code, thoughtful architecture,
+                modern, fast, and intuitive interfaces with the attention to every
+                detail. My work includes clean code, thoughtful architecture,
                 and visual aesthetics to turn ideas into functional and
-                user‑friendly web applications. I strive to ensure that every
-                project is not only technically solid but also delivers a smooth
-                and enjoyable experience for the user.
+                user‑friendly web applications. My goal is to craft technology that’s both engineered with precision and delightful to interact with.
               </p>
             </div>
             <div className='flex flex-wrap gap-4 animate-fade-in animation-delay-300'>
