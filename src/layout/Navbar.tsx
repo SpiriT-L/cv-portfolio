@@ -64,13 +64,15 @@ export const Navbar = () => {
                 <a
                   key={index}
                   href={link.href}
+                  onClick={() => setIsMenuOpen(false)}
                   className='text-lg text-muted-foreground hover:text-foreground py-2'
                 >
                   {link.label}
                 </a>
               ))}
-
-              <Button>Contact Me</Button>
+              <button onClick={() => setIsMenuOpen(false)}>
+                <Button>Contact Me</Button>
+              </button>
             </div>
           </div>
         )}
