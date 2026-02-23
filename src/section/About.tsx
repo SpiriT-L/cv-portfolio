@@ -57,7 +57,6 @@ export const About = () => {
                 optimize performance to deliver smooth, enjoyable experiences
                 that feel natural to users.
               </p>
-
               <p>
                 Clean code, thoughtful decisions, and continuous learning guide
                 my work.{' '}
@@ -67,6 +66,14 @@ export const About = () => {
                 strong team, and motivated to grow professionally while building
                 products that bring real value and genuinely improve the way
                 people interact with technology.
+              </p>
+            </div>
+            <div className='glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300'>
+              <p className='text-lg font-medium italic text-foreground' >
+                "My mission is to build interfaces that feel simple, fast, and
+                genuinely pleasant to use. I turn complex ideas into clean,
+                intuitive experiences and keep leveling up my skills to ship
+                products people actually enjoy."
               </p>
             </div>
           </div>
