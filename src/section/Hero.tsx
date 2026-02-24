@@ -3,7 +3,7 @@ import { Button } from '@/components/Button';
 import { FollowMe } from '@/components/FollowMe';
 import { ProfileImage } from '@/components/ProfileImage';
 import { Skills } from '@/components/Skills';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 import { useMemo } from 'react';
 
 const generateDots = () => {
@@ -81,7 +81,10 @@ const Hero = () => {
                 Contact Me
                 <ArrowRight className='w-5 h-5' />
               </Button>
-              <AnimationButton />
+              <AnimationButton>
+                <Download className='w-5 h-5' />
+                Download CV
+              </AnimationButton>
             </div>
             <FollowMe />
           </div>
