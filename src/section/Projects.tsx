@@ -1,3 +1,5 @@
+import { ArrowUpRight, Github } from 'lucide-react';
+
 const projects = [
   {
     title: 'Project 1',
@@ -56,6 +58,54 @@ export const Projects = () => {
               A selection of my recent work, from complex web applications to
               innovative tools that solve real-world problems.
             </p>
+          </div>
+          {/* project grid */}
+          <div className='grid md:grid-cols-2 gap-8'>
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className='group glass rounded-2xl overflow-hidden animate-fade-in md:span-1'
+                style={{ animationDelay: `${(index + 1) * 200}ms` }}
+              >
+                <div className='relative overflow-hidden aspect-video'>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
+                  />
+                  <div className='absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60' />
+                  {/* overlay links */}
+                  <div className='absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                    <a
+                      href={project.link}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-colors duration-300'
+                    >
+                      <ArrowUpRight className='w-5 h-5' />
+                    </a>
+                    <a
+                      href={project.github}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-colors duration-300'
+                    >
+                      <Github />
+                    </a>
+                  </div>
+                </div>
+
+                {/* content */}
+                <div>
+                  <div>
+                    <h3>{project.title}</h3>
+                    <ArrowUpRight />
+                  </div>
+                  <p>{project.description}</p>
+                  <div></div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
