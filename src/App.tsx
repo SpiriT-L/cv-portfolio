@@ -1,7 +1,8 @@
 import { Navbar } from '@/layout/Navbar.tsx';
 import Hero from '@/section/Hero';
-import { About } from './section/About';
-import { Projects } from './section/Projects';
+import { About } from '@/section/About';
+import { Projects } from '@/section/Projects';
+import { Experience } from '@/section/Experience';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Hero />
           <About />
           <Projects />
+          <Experience />
         </main>
       </div>
     </>
