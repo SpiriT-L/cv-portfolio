@@ -49,8 +49,18 @@ export const Experience = () => {
               </span>
             </h2>
             <p className='text-muted-foreground animate-fade-in animation-delay-200'>
-              My journey is basically the story of how I went from a curious beginner who loved figuring out how things work to a developer who confidently builds real projects with React. I learned by doing, experimenting, and solving actual problems — turning interest into solid skills that I use every day.
+              My journey is basically the story of how I went from a curious
+              beginner who loved figuring out how things work to a developer who
+              confidently builds real projects with React. I learned by doing,
+              experimenting, and solving actual problems — turning interest into
+              solid skills that I use every day.
             </p>
+          </div>
+          {/* Timeline */}
+          <div className='relative'>
+            <div className='timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/70 via-primary/30 to-transparent mb:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]' />
+
+            
           </div>
         </div>
       </section>
