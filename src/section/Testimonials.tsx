@@ -1,5 +1,5 @@
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
-import { useState } from 'react'
+import { useState } from 'react';
 
 const testimonials = [
   {
@@ -40,12 +40,12 @@ export const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const next = () => {
-    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    setCurrentIndex(prev => (prev + 1) % testimonials.length);
   };
 
   const previous = () => {
     setCurrentIndex(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
+      prev => (prev - 1 + testimonials.length) % testimonials.length,
     );
   };
 
@@ -105,7 +105,8 @@ export const Testimonials = () => {
                 <div className='flex gap-2'>
                   {testimonials.map((_, index) => (
                     <button
-                      className={`w-2 h-2 rounded-full transition-all duration-300 ${index === 0 ? 'w-8 bg-primary' : 'bg-muted-foreground/30 hover:bg-muted-foreground/50 '}`}
+                      onClick={() => setCurrentIndex(index)}
+                      className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex ? 'w-8 bg-primary' : 'bg-muted-foreground/30 hover:bg-muted-foreground/50 '}`}
                     />
                   ))}
                 </div>
@@ -123,4 +124,3 @@ export const Testimonials = () => {
     </>
   );
 };
-
