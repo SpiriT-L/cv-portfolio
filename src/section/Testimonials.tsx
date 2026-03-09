@@ -1,4 +1,4 @@
-import { Quote } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 const testimonials = [
   {
@@ -80,6 +80,20 @@ export const Testimonials = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className='flex items-center justify-center gap-4 mt-8'>
+                <button className='p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all'>
+                  <ChevronLeft />
+                </button>
+
+                <div className='flex gap-2'>
+                  {testimonials.map((_, index) => (
+                    <button className={`w-2 h-2 rounded-full transition-all duration-300 ${index === 0 ? "w-8 bg-primary" : "bg-muted-foreground/30 hover:bg-muted-foreground/50 "}`} />
+                  ))}
+                </div>
+                <button className='p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all'>
+                  <ChevronRight />
+                </button>
               </div>
             </div>
           </div>
