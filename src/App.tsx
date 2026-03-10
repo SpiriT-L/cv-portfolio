@@ -3,6 +3,7 @@ import Hero from '@/section/Hero';
 import { About } from '@/section/About';
 import { Projects } from '@/section/Projects';
 import { Experience } from '@/section/Experience';
+import { Testimonials } from '@/section/Testimonials';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <About />
           <Projects />
           <Experience />
+          <Testimonials />
         </main>
       </div>
     </>
