@@ -93,7 +93,7 @@ export const Contact = () => {
                     className='w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300 resize-none h-32'
                   />
                 </div>
-                <Button type='submit' size='lg' className='w-full'>
+                <Button size='lg' className='w-full' type='submit'>
                   Send Message <Send />
                 </Button>
               </form>

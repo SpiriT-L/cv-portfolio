@@ -2,6 +2,8 @@ interface LayoutProps {
   children: React.ReactNode;
   className?: string;
   size?: 'sm' | 'default' | 'lg';
+  type?: 'button' | 'submit' | 'reset';
+  onClick?: () => void;
 }
 
 export const Button = ({
