@@ -1,4 +1,5 @@
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Button } from '@/components/Button';
+import { Mail, MapPin, Phone, Send } from 'lucide-react';
 
 const contactInfo = [
   {
@@ -44,21 +45,57 @@ export const Contact = () => {
               message and let's discuss how we can work together.
             </p>
           </div>
-          <div className='glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300'>
-            <div>
-              <form action=''>
+          <div className='grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto'>
+            <div className='glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300'>
+              <form className='space-y-6'>
                 <div>
-                  <label>Name</label>
-                  <input />
+                  <label
+                    htmlFor='name'
+                    className='block text-sm font-medium mb-2'
+                  >
+                    Name
+                  </label>
+                  <input
+                    id='name'
+                    type='text'
+                    required
+                    placeholder='Your name...'
+                    className='w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300'
+                  />
                 </div>
                 <div>
-                  <label>Email</label>
-                  <input />
+                  <label
+                    htmlFor='email'
+                    className='block text-sm font-medium mb-2'
+                  >
+                    Email
+                  </label>
+                  <input
+                    id='email'
+                    type='email'
+                    required
+                    placeholder='your@email.com'
+                    className='w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300'
+                  />
                 </div>
                 <div>
-                  <label>Message</label>
-                  <input />
+                  <label
+                    htmlFor='message'
+                    className='block text-sm font-medium mb-2'
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id='message'
+                    rows={5}
+                    required
+                    placeholder='Your message...'
+                    className='w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300 resize-none h-32'
+                  />
                 </div>
+                <Button type='submit' size='lg' className='w-full'>
+                  Send Message <Send />
+                </Button>
               </form>
             </div>
           </div>
