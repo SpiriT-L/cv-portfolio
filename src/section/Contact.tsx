@@ -1,5 +1,6 @@
 import { Button } from '@/components/Button';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { useState } from 'react';
 
 const contactInfo = [
   {
@@ -21,7 +22,18 @@ const contactInfo = [
     href: 'https://www.google.com/maps/place/Minsk,+Belarus/@53.9006016,27.4499271,12z/data=!3m1!4b1!4m5!3m4!1s0x46dbcdbf8b9c9e7:0x400d567e279a160!8m2!3d53.9006016!4d27.5590008',
   },
 ];
+
 export const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <section id='contact' className='py-32 relative overflow-hidden'>
@@ -59,6 +71,10 @@ export const Contact = () => {
                     id='name'
                     type='text'
                     required
+                    value={formData.name}
+                    onChange={e =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
                     placeholder='Your name...'
                     className='w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300'
                   />
@@ -74,6 +90,10 @@ export const Contact = () => {
                     id='email'
                     type='email'
                     required
+                    value={formData.email}
+                    onChange={e =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
                     placeholder='your@email.com'
                     className='w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300'
                   />
@@ -89,11 +109,15 @@ export const Contact = () => {
                     id='message'
                     rows={5}
                     required
+                    value={formData.message}
+                    onChange={e =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                     placeholder='Your message...'
                     className='w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300 resize-none h-32'
                   />
                 </div>
-                <Button size='lg' className='w-full' type='submit'>
+                <Button size='lg' type='submit' className='w-full'>
                   Send Message <Send />
                 </Button>
               </form>
