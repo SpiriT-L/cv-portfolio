@@ -1,4 +1,4 @@
-interface LayoutProps {
+interface LayoutProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   className?: string;
   size?: 'sm' | 'default' | 'lg';
