@@ -1,4 +1,5 @@
 import { Mail, MapPin, Phone } from 'lucide-react';
+import { AvailabilityCard } from './AvailabilityCard';
 
 const contactInfo = [
   {
@@ -44,6 +45,7 @@ export const ContactInfo = () => {
             ))}
           </div>
         </div>
+      <AvailabilityCard />
       </div>
     </>
   );
