@@ -74,7 +74,7 @@ export const Contact = () => {
 
       setSubmitStatus({
         type: 'success',
-        message: 'Message sent successfully!',
+        message: `Message sent successfully! I'll get back to you soon.`,
       });
 
       setFormData({ name: '', email: '', message: '' });
@@ -88,7 +88,7 @@ export const Contact = () => {
 
       setSubmitStatus({
         type: 'error',
-        message: message ?? 'Failed to send message. Please try again later.',
+        message: message || 'Failed to send message. Please try again later.',
       });
     } finally {
       setIsSubmitting(false);
