@@ -37,6 +37,7 @@ export const ContactInfo = () => {
                   <a
                     href={item.href}
                     className='text-muted-foreground hover:text-primary transition-colors duration-300'
+                    target='_blank'
                   >
                     {item.value}
                   </a>
@@ -45,7 +46,7 @@ export const ContactInfo = () => {
             ))}
           </div>
         </div>
-      <AvailabilityCard />
+        <AvailabilityCard />
       </div>
     </>
   );
