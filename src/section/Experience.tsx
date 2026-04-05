@@ -58,7 +58,7 @@ export const Experience = () => {
           </div>
           {/* Timeline */}
           <div className='relative'>
-            <div className='timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/70 via-primary/30 to-transparent mb:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]' />
+            <div className='timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-2 bg-linear-to-b from-primary/70 via-primary/30 to-transparent mb:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]' />
 
             <div className='space-y-12'>
               {experiences.map((exp, index) => (

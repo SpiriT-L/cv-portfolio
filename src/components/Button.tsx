@@ -1,13 +1,16 @@
-interface LayoutProps {
+interface LayoutProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   className?: string;
   size?: 'sm' | 'default' | 'lg';
+  type?: 'button' | 'submit' | 'reset';
+  onClick?: () => void;
 }
 
 export const Button = ({
   className = '',
   size = 'default',
   children,
+  ...props
 }: LayoutProps) => {
   const baseClasses =
     'relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25 transition-colors cursor-pointer';
@@ -20,7 +23,7 @@ export const Button = ({
   const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
   return (
     <>
-      <button className={classes}>
+      <button className={classes} {...props}>
         <span className='relative flex items-center justify-center gap-2'>
           {children}
         </span>
