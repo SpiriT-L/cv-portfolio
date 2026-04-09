@@ -3,12 +3,12 @@ import { ArrowUpRight, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description of project 1',
-    image: '/projects/project1.png',
-    tags: ['React', 'TypeScript'],
-    link: '#',
-    github: '#',
+    title: 'REST Client App',
+    description: 'A lightweight alternative to Postman that allows you to send HTTP requests, manage headers, authentication, and request history.',
+    image: '/projects/rest-client-app.png',
+    tags: ['React', 'TypeScript', 'Eslint', 'Vite', 'husky'],
+    link: 'https://rest-client-app-77.vercel.app/',
+    github: 'https://github.com/SpiriT-L/rest-client-app-77',
   },
   {
     title: 'Project 2',
