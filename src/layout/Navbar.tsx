@@ -48,7 +48,16 @@ export const Navbar = () => {
             </div>
           </div>
           <div className='hidden md:block'>
-            <Button size='sm'>Contact Me</Button>
+            <Button
+              size='sm'
+              onClick={() => {
+                document.getElementById('contact')?.scrollIntoView({
+                  behavior: 'smooth',
+                });
+              }}
+            >
+              Contact Me
+            </Button>
           </div>
           <button
             className='md:hidden cursor-pointer text-foreground hover:text-primary '
@@ -71,7 +80,15 @@ export const Navbar = () => {
                 </a>
               ))}
               <button onClick={() => setIsMenuOpen(false)}>
-                <Button>Contact Me</Button>
+                <Button
+                  onClick={() => {
+                    document.getElementById('contact')?.scrollIntoView({
+                      behavior: 'smooth',
+                    });
+                  }}
+                >
+                  Contact Me
+                </Button>
               </button>
             </div>
           </div>
