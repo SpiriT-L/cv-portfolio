@@ -4,15 +4,22 @@ import { useState } from 'react';
 const testimonials = [
   {
     quote:
-      "Pedro is one of the most talented engineers I've worked with. His attention to detail and ability to translate complex requirements into elegant solutions is remarkable.",
+      'Leonid is one of the most talented engineers I have ever worked with. His attention to detail and ability to turn complex requirements into elegant solutions are simply remarkable.',
     author: 'Sarah Chen',
     role: 'CTO, Tech Innovators Inc.',
     avatar:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
   },
   {
+    quote: 'Thanks to Leonid for help!!!',
+    author: 'alexej-ilyutik',
+    role: '',
+    avatar:
+      'https://png.pngtree.com/thumb_back/fh260/background/20230516/pngtree-avatar-of-a-man-wearing-sunglasses-image_2569096.jpg',
+  },
+  {
     quote:
-      'Working with Pedro was a game-changer for our project. He delivered ahead of schedule with code quality that set a new standard for our team.',
+      'Working with Leonid was a game-changer for our project. He delivered ahead of schedule with code quality that set a new standard for our team.',
     author: 'Michael Rodriguez',
     role: 'Product Manager, Digital Solutions',
     avatar:
@@ -20,7 +27,7 @@ const testimonials = [
   },
   {
     quote:
-      "Pedro's expertise in React and TypeScript helped us rebuild our entire frontend in record time. His architectural decisions continue to pay dividends.",
+      "Leonid's expertise in React and TypeScript helped us rebuild our entire frontend in record time. His architectural decisions continue to pay dividends.",
     author: 'Emily Watson',
     role: 'Engineering Lead, StartUp Labs',
     avatar:
@@ -28,7 +35,7 @@ const testimonials = [
   },
   {
     quote:
-      "Not only is Pedro technically brilliant, but he's also a fantastic communicator and team player. He elevated everyone around him.",
+      "Not only is Leonid technically brilliant, but he's also a fantastic communicator and team player. He elevated everyone around him.",
     author: 'David Kim',
     role: 'CEO, Innovation Hub',
     avatar:
